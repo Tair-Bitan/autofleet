@@ -1,0 +1,88 @@
+.charts {
+    padding-top: 7rem;
+    background-color: white;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2rem 1fr 2rem;
+    > * {
+        grid-column: 2;
+        &.full {
+            grid-column: 1/-1;
+        }
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        > div {
+            border-radius: 2rem;
+            background-color: #242424;
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-size: 50%;
+            &:first-child {
+                background-image: url("../../imgs/graph-bgc.png");
+                .cards {
+                    .card {
+                        img {
+                            width: 7rem;
+                        }
+                    }
+                }
+            }
+            &:nth-child(2) {
+                background-image: url("../../imgs/vehicles-bgc.png");
+            }
+            overflow: hidden;
+            h2 {
+                font-size: 2rem;
+                font-weight: bold;
+                color: #55c3ff;
+                margin-bottom: 3rem;
+                padding: 4rem 4rem 0;
+            }
+            .chart {
+                display: none;
+                padding: 0 4rem 0;
+                margin-bottom: 8rem;
+                &.pie {
+                    width: 20%;
+                }
+                @include for-narrow-layout {
+                    display: block;
+                    width: 25rem;
+                }
+                @include for-normal-layout {
+                    width: 50%;
+                    min-width: 31rem;
+                    &.pie {
+                        min-width: 21rem;
+                    }
+                }
+            }
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                background: rgb(82, 192, 250);
+                background: linear-gradient(90deg, rgba(82, 192, 250, 1) 0%, rgba(40, 230, 192, 1) 100%);
+                padding: 0 4rem 0;
+                gap: 2rem;
+                .card {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    transform: translateY(-20%);
+                    gap: 1.5rem;
+                    cursor: default;
+                    padding: 2rem;
+                    background-color: white;
+                    border-radius: 0.5rem;
+                    img {
+                        width: 4rem;
+                        max-height: 4rem;
+                    }
+                }
+            }
+        }
+    }
+}

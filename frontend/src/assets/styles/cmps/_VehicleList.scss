@@ -1,0 +1,18 @@
+.vehicle-list {
+    height: calc(90vh - 4rem);
+    border: none;
+    padding: 0;
+    .info {
+        margin-bottom: 1rem;
+    }
+    > div {
+        overflow-y: auto;
+    }
+}
+
+@include for-narrow-layout {
+    .vehicle-list {
+        padding: 0 0 0 3rem;
+        border-inline-end: 1px solid $borderClr;
+    }
+}

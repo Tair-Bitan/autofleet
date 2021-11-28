@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f64c3a05.chunk.css",
+    "main.js": "/static/js/main.f5bc5765.chunk.js",
+    "main.js.map": "/static/js/main.f5bc5765.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.24610871.js",
+    "runtime-main.js.map": "/static/js/runtime-main.24610871.js.map",
+    "static/js/2.227f513b.chunk.js": "/static/js/2.227f513b.chunk.js",
+    "static/js/2.227f513b.chunk.js.map": "/static/js/2.227f513b.chunk.js.map",
+    "static/js/3.41cefcc3.chunk.js": "/static/js/3.41cefcc3.chunk.js",
+    "static/js/3.41cefcc3.chunk.js.map": "/static/js/3.41cefcc3.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.f64c3a05.chunk.css.map": "/static/css/main.f64c3a05.chunk.css.map",
+    "static/js/2.227f513b.chunk.js.LICENSE.txt": "/static/js/2.227f513b.chunk.js.LICENSE.txt",
+    "static/media/global.scss": "/static/media/vehicles-bgc.1257b095.png",
+    "static/media/car.000ab4b3.png": "/static/media/car.000ab4b3.png",
+    "static/media/icon-bicycle.8b3c5fdd.svg": "/static/media/icon-bicycle.8b3c5fdd.svg",
+    "static/media/icon-car.7dff49e1.svg": "/static/media/icon-car.7dff49e1.svg",
+    "static/media/icon-inride.50b8af09.svg": "/static/media/icon-inride.50b8af09.svg",
+    "static/media/icon-moped.f665533d.svg": "/static/media/icon-moped.f665533d.svg",
+    "static/media/icon-online.02231f50.svg": "/static/media/icon-online.02231f50.svg",
+    "static/media/icon-van.05f784d9.svg": "/static/media/icon-van.05f784d9.svg",
+    "static/media/logo.9ea2b80b.png": "/static/media/logo.9ea2b80b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.24610871.js",
+    "static/js/2.227f513b.chunk.js",
+    "static/css/main.f64c3a05.chunk.css",
+    "static/js/main.f5bc5765.chunk.js"
+  ]
+}

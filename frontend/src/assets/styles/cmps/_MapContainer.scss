@@ -1,0 +1,22 @@
+.map-container {
+    position: relative;
+    width: 100%;
+    height: calc(90vh - 4rem);
+    overflow: hidden;
+    grid-column: 2;
+    border-inline-end: none;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    box-shadow: inset 0 0 10px 1px #0002;
+
+    > * {
+        border-radius: 0.8rem;
+        overflow: hidden;
+        box-shadow: 0 0 10px 1px #0002;
+    }
+
+    .marker {
+        cursor: default;
+        width: 1.2rem;
+    }
+}

@@ -1,0 +1,27 @@
+.vehicle-preview {
+    cursor: default;
+    gap: 0.8rem;
+    padding: 1rem;
+    transition: 0.2s;
+    font-weight: bold;
+    margin: 1rem 1rem 1rem 0.3rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px 1px #0002;
+    &:hover {
+        background-color: white;
+    }
+    img {
+        width: 4.5rem;
+    }
+    .content {
+        gap: 0.5rem;
+        .vehicle-id {
+            font-size: 1.1rem;
+            color: $h1Clr;
+        }
+        .vehicle-loc {
+            font-size: 0.8rem;
+        }
+    }
+}

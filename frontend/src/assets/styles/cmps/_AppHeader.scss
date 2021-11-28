@@ -1,0 +1,176 @@
+.app-header {
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 5rem;
+    padding: 0 2rem;
+    background-color: $bgcClr;
+    transition: 0.3s;
+    &.scroll {
+        box-shadow: 0 0 10px 1px #0002;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $pClr;
+        text-decoration: none;
+        height: 100%;
+    }
+
+    .logo {
+        img {
+            height: 3rem;
+            margin-inline-end: 10px;
+        }
+        font-size: 1.5rem;
+        font-family: "Quicksand-bold";
+    }
+
+    .nav-item {
+        font-size: 1rem;
+        font-family: "Quicksand-bold";
+        &:hover,
+        &.active {
+            color: $h1Clr;
+        }
+    }
+
+    .btn-menu {
+        position: relative;
+        right: 0;
+        align-self: center;
+        align-items: center;
+        width: 30px;
+        height: 100%;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+        &:hover > * {
+            background-color: $h1Clr;
+        }
+        & > * {
+            display: block;
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background-color: $pClr;
+            border-radius: 10px;
+            opacity: 1;
+            left: 0;
+            transform: rotate(0deg);
+            transition: 0.25s ease-in-out;
+        }
+        :first-child {
+            top: calc(50% - 9px);
+        }
+        :nth-child(2) {
+            top: 50%;
+        }
+        :last-child {
+            top: calc(50% + 9px);
+        }
+
+        &.open {
+            right: 18%;
+        }
+        &.open :first-child {
+            top: 50%;
+            transform: rotate(135deg);
+        }
+        &.open :nth-child(2) {
+            opacity: 0;
+            left: 60px;
+        }
+        &.open :last-child {
+            top: 50%;
+            transform: rotate(-135deg);
+        }
+    }
+
+    @include for-mobile-layout {
+        padding: 0 1rem;
+        .main-nav {
+            position: fixed;
+            transform: translateX(100%);
+            top: 5rem;
+            right: 0;
+            width: 35vw;
+            height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            background-color: $bgcClr;
+            transition: transform 0.5s;
+            .nav-item {
+                width: 100%;
+                height: fit-content;
+                margin: 0;
+                padding: 20px 0;
+                border-bottom: 1px solid white;
+                &:first-child {
+                    border-top: 1px solid white;
+                }
+            }
+            &.open {
+                transform: translateX(0);
+            }
+        }
+        .btn-menu {
+            display: flex;
+        }
+    }
+
+    @include for-narrow-layout {
+        .main-nav {
+            position: fixed;
+            transform: translateX(100%);
+            top: 5rem;
+            right: 0;
+            width: 50vw;
+            height: 100vh;
+            flex-direction: column;
+            align-items: center;
+            background-color: $bgcClr;
+            transition: transform 0.5s;
+            .nav-item {
+                width: 100%;
+                height: fit-content;
+                margin: 0;
+                padding: 20px 0;
+                border-bottom: 1px solid white;
+                &:first-child {
+                    border-top: 1px solid white;
+                }
+            }
+            &.open {
+                transform: translateX(0);
+            }
+        }
+        .btn-menu {
+            display: flex;
+        }
+    }
+
+    @include for-normal-layout {
+        .main-nav {
+            position: static;
+            transform: translateX(0);
+            width: fit-content;
+            height: 100%;
+            flex-direction: row;
+            .nav-item {
+                width: fit-content;
+                border: none;
+                &:first-child {
+                    border-top: none;
+                }
+                &:not(:last-of-type) {
+                    margin-inline-end: 2rem;
+                }
+            }
+        }
+        .btn-menu {
+            display: none;
+        }
+    }
+}

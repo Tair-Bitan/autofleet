@@ -1,0 +1,22 @@
+.fleet-map {
+    padding-top: 7rem;
+    display: grid;
+    grid-template-columns: 1rem 1fr 1rem;
+    row-gap: 3rem;
+    > * {
+        grid-column: 2;
+    }
+    h1 {
+        font-size: 1.7em;
+        margin-bottom: 10px;
+    }
+}
+
+@include for-narrow-layout {
+    .fleet-map {
+        grid-template-columns: 2rem 2fr 1fr 2rem;
+        > * {
+            grid-column: initial;
+        }
+    }
+}
